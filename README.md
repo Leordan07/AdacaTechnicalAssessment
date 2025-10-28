@@ -1,7 +1,15 @@
 #This is for ADACA - Technical Assessment
 
+Setup Instructions:
+1. Clone the Repository
+2. Open the cloned Repository in Visual Studio Code
+3. Open Terminal and run the command "npm install" to install dependencies
+4. Run command "npx playwright install" to Install Playwright Browsers
+5. To run only the Playwright test, use command "npm run test:playwright"
+6. To run only the Selenium tests, use command "npm run test:selenium"
+7. To run both Playwright and Selenium tests, use command "npm test"
+
 NOTE:
-- When Running please use command: "npm test"
 - Make sure prerequisites to Node.js and Selenium WebDriver is properly installed before running.
 
 THANKS!! TO GOD BE ALL THE GLORY!
