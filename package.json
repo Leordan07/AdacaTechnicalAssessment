@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
-    "test": "cucumber-js --import features/**/*.ts --require-module ts-node/esm"
+  "test:playwright": "npx playwright test",
+  "test:selenium": "npx cucumber-js --require-module ts-node/register --require steps-definitions/**/*.ts",
+  "test": "npm run test:selenium && npm run test:playwright"
   },
   "keywords": [],
   "author": "",
@@ -17,10 +19,12 @@
   },
   "devDependencies": {
     "@cucumber/cucumber": "^12.2.0",
+    "@playwright/test": "^1.56.1",
     "@types/chai": "^5.2.3",
     "@types/mocha": "^10.0.10",
     "@types/node": "^24.9.1",
     "@types/selenium-webdriver": "^4.35.2",
+    "playwright": "^1.56.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }
